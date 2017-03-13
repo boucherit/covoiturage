@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppCov</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <!-- 1/La classe navbar-fixed-top permet de fixer la barre en haut de la page du navigateur .
+             A savoir : Une barre fixe située en haut reste collée au bord de la fenêtre, et quand vous faites défiler avec l’ascenseur, le contenu passe sous la barre de façon logique. Il se peut que vous désiriez que la barre suive le mouvement et ne soit plus collée au bord de la fenêtre, mais au-dessus du contenu. Dans ce cas, évidemment, la barre disparaît quand vous faites défiler. Il faut alors utiliser la classe navbar-static-top au lieu de navbar-fixed-top !
+          2/Si on mets navbar-inverse au lieu de navbar-default la barre qui va etre en haut va changer la couleur en noir.   
+      -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      
+      <!-- La classe navbar-fixed-top impose la présence de la classe container ou container-fluid.-->
+        <div class="container">
+        <!-- Le titre doit être inclus dans une classe navbar-header pour avoir un affichage correct sur les mobiles.-->
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!--  Apparaître un titre avec des caractères plus visibles avec la classe navbar-brand -->
+                <a class="navbar-brand" href="#"><i class="fa fa-car"></i>&nbsp; AppCov</a>
+             </div>
+             <div class="navbar-collapse collapse">
+             <!-- Les classes nav et navbar-nav doivent être utilisées avec une balise <ul>. Tous les items de navigation apparaissent alors avec des balises <li>. L'item actif est repéré avec la classe active(gris). Un item désactivé est défini avec la classe disabled. Voici à la figure suivante un aperçu de la barre-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Rechercher un trajet</a></li> 
+                  <li><a href="inscription.html"> proposer un trajet <i class=\"glyphicon glyphicon-indent-left\"></i></button></a></li>
+                </ul>
+             </div>
+        </div>
+      </div>
+      <!-- Fin du navbar -->
+      <!-- classe jumbotron pour mettre en valeur des contenus importants pour nitre site web ! -->
+      <div class="container">
+	      <div class="jumbotron text-center" >
+	      	<ul class="nav nav-tabs">
+		<li> <a  href="TDB.html" role="button" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+		Tableau de bord
+		</a>
+		</li>
+	<li> <a   href="mes-reservations.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Vos réservations
+    </a></li>
+	<li> <a   href="mes-annonces.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Vos annonces
+    </a></li>
+	<li> <a   href="messages.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Messages
+    </a></li>
+	<li> <a   href="profil.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Profil
+    </a></li>
+	
+  <li role="presentation" class="dropdown">
+    <a   href="argent.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Argent
+    </a>
+    
+  </li>
+</ul>
+       
+		
+				<div class="btn-group btn-group-justified" role="group">
+					<ul class="nav nav-tabs">  
+					<li> 
+  
+  <a   href="mes-annonces.html" role="button" aria-haspopup="true" aria-expanded="false">
+    Trajet à venir
+    </a>
+					</li>
+					
+					<li> <a   href="trajet-archive.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Trajet archivées
+    </a>
+					</li>
+					</ul>
+				</div>
+				<div>
+				</div>
+				<div class="panel panel-info">
+  <!-- Default panel contents -->
+  <div class="panel-heading">Trajet archivées</div>
+ 
+ <!-- Table -->
+  
+<div class="table-responsive">          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Ville Départ</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Heure de départ</th>
+        <th>passager</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+      </div>
+      </div>
+      <!-- Footer -->
+      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <div class="navbar-text pull-left">
+             <p>2017 Copyright &copy; AppCov.</p>
+            </div>
+            <!-- Ajout des icones avec Font awesome-->
+	            <div class="navbar-text pull-right">
+                <a href="#"><i class="fa fa-android fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+	            </div>
+          </div>
+      </div>
+
+       
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+ 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>

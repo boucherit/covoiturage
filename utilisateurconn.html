@@ -1,0 +1,177 @@
+
+<!-- Le code html5 de l'interface utilisateur connecte ! #Keep Going Fight !  -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeRoll</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- sytyle.css-->
+    <link href="bootstrap/css/styleuticonn.css" type="text/css" rel="stylesheet">
+    <!-- Font Awesome-->
+  
+  <!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/foundation-icons/foundation-icons/foundation-icons.css" />
+  <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+  <!-- Calendrier --> 
+    <link href="bootstrap/css/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="bootstrap/css/jquery-ui.css" rel="stylesheet">
+</head>
+<body>
+      <!-- 1/La classe navbar-fixed-top permet de fixer la barre en haut de la page du navigateur .
+             A savoir : Une barre fixe située en haut reste collée au bord de la fenêtre, et quand vous faites défiler avec l’ascenseur, le contenu passe sous la barre de façon logique. Il se peut que vous désiriez que la barre suive le mouvement et ne soit plus collée au bord de la fenêtre, mais au-dessus du contenu. Dans ce cas, évidemment, la barre disparaît quand vous faites défiler. Il faut alors utiliser la classe navbar-static-top au lieu de navbar-fixed-top !
+          2/Si on mets navbar-inverse au lieu de navbar-default la barre qui va etre en haut va changer la couleur en noir.   
+      -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      
+      <!-- La classe navbar-fixed-top impose la présence de la classe container ou container-fluid.-->
+        <div class="container">
+        <!-- Le titre doit être inclus dans une classe navbar-header pour avoir un affichage correct sur les mobiles.-->
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!--  Apparaître un titre avec des caractères plus visibles avec la classe navbar-brand -->
+                <a class="navbar-brand" href="#"><i class="fa fa-car"></i>&nbsp; WeRoll</a>
+             </div>
+             <div class="navbar-collapse collapse">
+             <!-- Les classes nav et navbar-nav doivent être utilisées avec une balise <ul>. Tous les items de navigation apparaissent alors avec des balises <li>. L'item actif est repéré avec la classe active(gris). Un item désactivé est défini avec la classe disabled. Voici à la figure suivante un aperçu de la barre-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="utilisateurconn.html">Accueil</a></li> 
+                  <li><a href="publierannonce.html">Publier votre annonce</a></li>
+                  <li><a href="#pro"  data-toggle="modal" >
+                    <span class="glyphicon glyphicon-user"></span> &nbsp;Profil </a>
+                  </li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-chevron-down"></i>
+                    </a>
+                   <ul class="dropdown-menu">
+                        <li><a href="#">Tableau de bord</a></li>
+                        <li><a href="#">Paiements effectués</a></li>
+                        <li><a href="#">Avis</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Se déconnecter</a></li>
+                      </ul>
+                </li>
+
+                </ul>
+             </div>
+        </div>
+      </div>
+      <!-- Fin du navbar -->
+      <!-- classe jumbotron pour mettre en valeur des contenus importants pour nitre site web ! -->
+      <br/>
+      <br/>
+     <div class="jumbotron  text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <h1>Bienvenue Julien sur WeRoll</h1>
+          <p>Voyagez moins cher en covoiturage</p>
+
+          <hr class="m-y-2">
+          <br/>
+          <br/>
+          <br/>
+          <form class="navbar-form" >
+          <div class="input-group"> 
+              <span class="input-group-addon"><i class="fa fa-map-marker fa" aria-hidden="true"></i></span>
+              <input class="input-lg form-control" placeholder="Votre départ" type="search">
+          </div>
+            
+          <div class="input-group"> 
+              <span class=" input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <input class="input-lg form-control" placeholder="Votre destination" type="search">
+          </div>
+            
+          <div class="input-group">   
+              <span class="input-group-addon"> <i class="fa fa-calendar" aria-hidden="true"></i> </span>
+                <input type="text" class="datepicker input-lg form-control" readonly> 
+          </div>
+
+          <div class="input-group">
+              <button type="submit" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-eye-open"></span> Chercher un trajet</button>
+          </div>
+          </div>
+          
+        </div>
+      </div> <!-- END container -->
+    </div>
+     
+     <!-- Footer -->    
+<footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-6 col-xs-12">
+    <a href="#"><i class="fa fa-android fa-2x"></i></a>
+    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+  </div>
+  <div class=" navbar-text pull-right">
+    <p>2017 Copyright &copy; WeRoll.</p>
+  </div> 
+  </div>
+  </div>
+</footer>
+
+     
+      <div class="modal fade" id="pro" role="dialog">
+       <div class="modal-dialog">
+          <div class="modal-content">
+
+              <form class="form-horizontal" role="form" method="POST" action="#">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+                    <center><h4 class="modal-title" id="myModalLabel">Résumé du profil</h4></center>
+                </div>
+                <div class="model-body">
+                    <center>
+                    <img src="img/pro.jpg" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+                    <h3 class="media-heading"><strong>Julien</strong></h3>
+                    <span>25 ans </span>
+                        <i class="fi-no-smoking "></i>
+                        <i class="fi-no-dogs"></i>
+                        <i class="fa fa-music" aria-hidden="true"></i>
+                    </center>
+                    <hr>
+                    <center>
+                    <p class="text-left">
+                      <ul  class="list-group">
+                       <a class="list-group-item">Voyage Effectuer<span class="badge"> 25</span></a>
+                       <a class="list-group-item">Voyage proposé <span class="badge">18</span></a>
+                      </ul>
+                    </p>
+                    <br>
+                    </center>
+                </div>
+                <div class="modal-footer">
+                    <center>
+                    <button type="button" class="btn btn-default" data-dismiss="modal"> j'en ai assez entendu sur xx</button>
+                    </center>
+                </div>
+              </form>
+
+          </div>
+       </div>
+      </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+  <!-- Jquery-ui Calendrier -->
+  <script src="bootstrap/js/bootstrap-datepicker.js"></script>
+  <script src="bootstrap/js/jquery-ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppCov</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- sytyle.css-->
+    <link href="bootstrap/css/style.css" type="text/css" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <!-- 1/La classe navbar-fixed-top permet de fixer la barre en haut de la page du navigateur .
+             A savoir : Une barre fixe située en haut reste collée au bord de la fenêtre, et quand vous faites défiler avec l’ascenseur, le contenu passe sous la barre de façon logique. Il se peut que vous désiriez que la barre suive le mouvement et ne soit plus collée au bord de la fenêtre, mais au-dessus du contenu. Dans ce cas, évidemment, la barre disparaît quand vous faites défiler. Il faut alors utiliser la classe navbar-static-top au lieu de navbar-fixed-top !
+          2/Si on mets navbar-inverse au lieu de navbar-default la barre qui va etre en haut va changer la couleur en noir.   
+      -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+		
+      <!-- La classe navbar-fixed-top impose la présence de la classe container ou container-fluid.-->
+        <div class="container">
+        <!-- Le titre doit être inclus dans une classe navbar-header pour avoir un affichage correct sur les mobiles.-->
+             <div class="navbar-header >
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!--  Apparaître un titre avec des caractères plus visibles avec la classe navbar-brand -->
+                <a class="navbar-brand" href="#"><i class="fa fa-car"></i>&nbsp; AppCov</a>
+             </div>
+             <div class="navbar-collapse collapse">
+             <!-- Les classes nav et navbar-nav doivent être utilisées avec une balise <ul>. Tous les items de navigation apparaissent alors avec des balises <li>. L'item actif est repéré avec la classe active(gris). Un item désactivé est défini avec la classe disabled. Voici à la figure suivante un aperçu de la barre-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Rechercher un trajet</a></li> 
+                  <li><a href="proposer_trajet.html"> proposer un trajet <i class=\"glyphicon glyphicon-indent-left\"></i></button></a></li>
+                </ul>
+             </div>
+        </div>
+      </div>
+      <!-- Fin du navbar -->
+      <!-- classe jumbotron pour mettre en valeur des contenus importants pour nitre site web ! -->
+      <div class="container">
+	      <div class="jumbotron" >
+
+          <ul class="nav nav-pills">
+			<li class="active"><a href="#TDB" data-toggle="tab" aria-expanded="true">Tableau de bord</a></li>
+            <li class=""><a href="#reservation" data-toggle="tab" aria-expanded="false">Vos réservations</a></li>			
+			<li class=""><a href="#annonce" data-toggle="tab" aria-expanded="false">Vos annonces</a></li>
+            <li class=""><a href="#message" data-toggle="tab" aria-expanded="false">Messages</a></li>
+			<li class=""><a href="#argent" data-toggle="tab" aria-expanded="false">Argent</a></li>
+          </ul>
+
+		   <div class="tab-content">
+<!-- Tableau de Bord -->
+		   <div class="tab-pane fade active in" id="TDB">
+              <div class="well">		
+			<aside class="col-sm-4">
+				<div class="panel panel-info" >
+					<div class="panel-heading">
+
+						<h3 class="panel-title">Informations:</h3>
+
+					</div>
+				<ul  class="nav nav-stacked">
+				 <a class="list-group-item"  href="#profil" data-toggle="tab" aria-expanded="true">Profils <span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+				 <a class="list-group-item" href="#information" data-toggle="tab" aria-expanded="false">Informations<span class="glyphicon glyphicon-chevron-right pull-right"></span></a>
+				 <a class="list-group-item" href="#" data-toggle="tab" aria-expanded="false">Voiture <span class="badge">2</span></a>
+				 <a class="list-group-item" href="#" data-toggle="tab" aria-expanded="false">Carte Bancaire <span class="badge">250 €</span></a>
+				</ul>
+				</div>
+			</aside>
+			
+			
+		 
+		 <div class="tab-content">
+		 <!--Profil -->
+				<div class="tab-pane fade active in" id="profil">
+				<div class="row">	
+					<div class="col-sm-2">
+					<a href="/membre/profil/lgg8woV1pJ5r-KYZNMUUMA">
+					<img class="img-rounded" alt="Imad (27 ans)" src="https://d2kwny77wxvuie.cloudfront.net/user/FrotRHzCRZ2u6Pp_LriPxQ/thumbnail_72x72.jpeg" style="width: 72; height: 72;" data-hasqtip="8" oldtitle="Imad (27 ans)" title="" aria-describedby="qtip-8" height="72" width="72">
+					</a>
+					</div>
+					
+					<div class="col-sm-2">
+					Imad KHEDDOUCI
+					age: 26 ans
+					</div>
+					
+					<div class="col-sm-4">
+				<ul  class="list-group">
+				 <a class="list-group-item">Voyage Effectuer<span class="badge"> 25</span></a>
+				 <a class="list-group-item">Voyage proposé <span class="badge">18</span></a>
+				</ul>
+					</div>
+
+
+
+					<div class="col-sm-offset-5 row">
+						<a class="btn btn-info btn-lg" role="button">Voir votre profil public<span class="glyphicon glyphicon glyphicon-eye-open"></span></a>
+						
+					
+						<a class="btn btn-info btn-lg" role="button">Modifier votre profil<span class="glyphicon glyphicon glyphicon-hand-right"></span></a>
+					</div>						
+					</br>
+					</div>
+									</div>
+					
+					
+					<!--Informations-->
+					
+					<div class="tab-pane fade " id="information">
+				<div class="row">	
+					
+					<div class="col-sm-7">
+					
+  <div class="panel-heading">Informations personnelles</div>
+<form  class="well" id="mod-form" method="post" action="" onsubmit="return verif()" > 
+
+  
+  <div class="form-group">
+              <label for="nom" class="cols-sm-2 control-label">Nom</label>
+              <div class="">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="nom"  id="nom" value="kheddouci"/>
+                </div>
+              </div>
+            </div>
+			
+			
+			
+			
+  <div class="form-group">
+              <label for="prenom" class="cols-sm-2 control-label">Prénom</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="prenom" id="prenom" value="Imad" />
+                </div>
+              </div>
+            </div>
+
+			<div class="form-group">
+              <label for="tel" class="cols-sm-2 control-label">Numéro de telephone</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="tel" id="tel" value="07658585"  />
+                </div>
+              </div>
+            </div>
+ <div class="form-group">
+              <label for="email" class="cols-sm-2 control-label">E-Mail</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-at"   aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="email" id="email" value="suft@gmail.com" />
+                </div>
+              </div>
+            </div>
+
+ <div class="form-group">
+              <label for="email" class="cols-sm-2 control-label">Date de naissance</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+                  <input type="date" class="form-control" name="date" id="date" value="18/10/2015"  />
+                </div>
+              </div>
+            </div>
+
+  <div class="form-group ">
+              <button onclick="insert()" target="_blank"  id="" class="btn btn-primary  btn-block login-button" type="submit">Modifier</button>
+            </div>
+</form>
+
+
+      </div>
+					</div>
+					
+					
+
+
+
+											
+					</br>
+					</div>
+									</div>
+					</div>
+			</div>
+	
+		
+			
+	<!-- Réservation-->			
+				
+			<div class="tab-pane fade" id="reservation">
+
+			<ul class="nav nav-tabs">
+			<li class="active"><a href="#cours" data-toggle="tab" aria-expanded="true">En cours</a></li>
+            <li class=""><a href="#histo" data-toggle="tab" aria-expanded="false">Historique</a></li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane fade active in" id="cours">
+			<div class="well">
+					<h4><span class="label-def col-sm-offset-4">Reservation en cours</span></h4> 
+				
+				<div class="table-responsive">          
+			<table class="table">
+			<thead>
+	   <tr>
+        <th>Ville Départ</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Heure de départ</th>
+        <th>Place réservé</th>
+		<th>Montant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+											
+					</br>
+					</div>
+					</div>
+					
+			<div class="tab-pane fade in" id="histo">
+			<div class="well">
+					<h4><span class="label-def col-sm-offset-4">historique</span></h4> 
+				
+				<div class="table-responsive">          
+			<table class="table">
+			<thead>
+	   <tr>
+        <th>Ville Départ</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Heure de départ</th>
+        <th>Place réservé</th>
+		<th>Montant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+											
+					</br>
+					</div>
+					</div>		
+				</div>	
+				</div> 
+				
+			<div class="tab-pane fade" id="annonce">
+
+			<ul class="nav nav-tabs">
+			<li class="active"><a href="#venir" data-toggle="tab" aria-expanded="true">Trajet à venir</a></li>
+            <li class=""><a href="#archive" data-toggle="tab" aria-expanded="false">Trajet Archivé</a></li>
+			</ul>
+			<div class="tab-content">
+			<div class="tab-pane fade active in" id="venir">
+			<div class="well">
+					<h4><span class="label-def col-sm-offset-4">Trajets</span></h4> 
+				
+				<div class="table-responsive">          
+			<table class="table">
+			<thead>
+	   <tr>
+        <th>Ville Départ</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Heure de départ</th>
+        <th>Place réservé</th>
+		<th>Montant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+											
+					</br>
+					</div>
+					</div>
+					
+			<div class="tab-pane fade in" id="archive">
+			<div class="well">
+					<h4><span class="label-def col-sm-offset-4">Trajets</span></h4> 
+				
+				<div class="table-responsive">          
+			<table class="table">
+			<thead>
+	   <tr>
+        <th>Ville Départ</th>
+        <th>Destination</th>
+        <th>Date</th>
+        <th>Heure de départ</th>
+        <th>Place réservé</th>
+		<th>Montant</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+		<td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+	  <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+											
+					</br>
+					</div>
+					</div>		
+				</div>	
+				</div> 
+
+
+<!--Messages-->				
+		<div class="tab-pane fade" id="message">
+              <div class="well">		
+			
+			
+
+		 
+					Affichage des Messages ici
+			</div>
+		</div>
+		
+		<!--Argent-->				
+		<div class="tab-pane fade" id="argent">
+              <div class="well">		
+			
+			
+
+		 
+					Affichage des Messages ici
+			</div>
+		</div>
+		</div> <!-- fin de la tab-content -->
+		
+	</div>  <!-- Div jubutron -->
+ 
+	</div>	<!-- Div Section -->
+				
+							
+
+      <!-- Footer -->
+      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <div class="navbar-text pull-left">
+             <p>2017 Copyright &copy; AppCov.</p>
+            </div>
+            <!-- Ajout des icones avec Font awesome-->
+	            <div class="navbar-text pull-right">
+                <a href="#"><i class="fa fa-android fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+	            </div>
+          </div>
+      </div>
+
+       
+      
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+ 
+
+  </body>
+</html>
+
+

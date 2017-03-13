@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppCov</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/css/main.css" rel="stylesheet" type="text/css" /> 
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/spinner/ui.spinner.js"></script>
+<script type="text/javascript" src="css/js/plugins/spinner/jquery.mousewheel.js"></script>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/charts/excanvas.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/charts/jquery.sparkline.min.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/forms/uniform.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.cleditor.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.tagsinput.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/forms/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/wizard/jquery.form.js"></script>
+<script type="text/javascript" src="css/js/plugins/wizard/jquery.validate.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/wizard/jquery.form.wizard.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="css/js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="css/js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="css/js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/tables/datatable.js"></script>
+<script type="text/javascript" src="css/js/plugins/tables/tablesort.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/tables/resizable.min.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.prettyPhoto.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.colorpicker.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="css/js/plugins/ui/jquery.sourcerer.js"></script>
+
+<script type="text/javascript" src="css/js/plugins/calendar.min.js"></script>
+<script type="text/javascript" src="css/js/plugins/elfinder.min.js"></script>
+
+<script type="text/javascript" src="css/js/custom.js"></script>
+    <!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <!-- 1/La classe navbar-fixed-top permet de fixer la barre en haut de la page du navigateur .
+             A savoir : Une barre fixe située en haut reste collée au bord de la fenêtre, et quand vous faites défiler avec l’ascenseur, le contenu passe sous la barre de façon logique. Il se peut que vous désiriez que la barre suive le mouvement et ne soit plus collée au bord de la fenêtre, mais au-dessus du contenu. Dans ce cas, évidemment, la barre disparaît quand vous faites défiler. Il faut alors utiliser la classe navbar-static-top au lieu de navbar-fixed-top !
+          2/Si on mets navbar-inverse au lieu de navbar-default la barre qui va etre en haut va changer la couleur en noir.   
+      -->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      
+      <!-- La classe navbar-fixed-top impose la présence de la classe container ou container-fluid.-->
+        <div class="container">
+        <!-- Le titre doit être inclus dans une classe navbar-header pour avoir un affichage correct sur les mobiles.-->
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!--  Apparaître un titre avec des caractères plus visibles avec la classe navbar-brand -->
+                <a class="navbar-brand" href="#"><i class="fa fa-car"></i>&nbsp; AppCov</a>
+             </div>
+             <div class="navbar-collapse collapse">
+             <!-- Les classes nav et navbar-nav doivent être utilisées avec une balise <ul>. Tous les items de navigation apparaissent alors avec des balises <li>. L'item actif est repéré avec la classe active(gris). Un item désactivé est défini avec la classe disabled. Voici à la figure suivante un aperçu de la barre-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.html">Rechercher un trajet</a></li> 
+                  <li><a href="inscription.html"> proposer un trajet <i class=\"glyphicon glyphicon-indent-left\"></i></button></a></li>
+                </ul>
+             </div>
+        </div>
+      </div>
+      <!-- Fin du navbar -->
+      <!-- classe jumbotron pour mettre en valeur des contenus importants pour nitre site web ! -->
+      <div class="container">
+	      <div class="jumbotron text-center" >
+	      	<ul class="nav nav-tabs">
+		<li> <a  href="TDB.html" role="button" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+		Tableau de bord
+		</a>
+		</li>
+	<li> <a   href="mes-reservations.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Vos réservations
+    </a></li>
+	<li> <a   href="mes-annonces.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Vos annonces
+    </a></li>
+	<li> <a   href="messages.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Messages
+    </a></li>
+	<li> <a   href="profil.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Profil
+    </a></li>
+	
+  <li role="presentation" class="dropdown">
+    <a   href="argent.html" role="button" aria-haspopup="true" aria-expanded="false">
+     Argent
+    </a>
+    
+  </li>
+</ul>
+       
+		
+				
+				
+	<div class="panel panel-info">
+		<!-- Default panel contents -->
+		<div class="panel-heading">Covoiturage disponible pour votre recherche</div>
+  
+		
+       <!-- Purchase info widget 
+	   <div class="title">
+	   
+                    	<img src="img/images/icons/dark/money.png" alt="" class="titleIcon" />
+                        <h6>Purchase info</h6>
+						
+                        <div class="topIcons" >
+                            <a href="#" class="tipS" title="Download statement"><img src="img/images/icons/downloadTop.png" alt="" /></a>
+                            <a href="#" class="tipS" title="Print invoice"><img src="img/images/icons/printTop.png" alt="" /></a>
+                            <a href="#" class="tipS" title="Edit"><img src="img/images/icons/editTop.png" alt="" /></a>
+                        </div>
+						
+					<div class="newOrder">
+                        <div class="userRow">
+                            <a href="#" title=""><img src="img/images/user.png" alt="" class="floatL" /></a>
+                            <ul class="leftList">
+                                <li><a href="#" title=""><strong>Rondi Andaloussi Youssef</strong></a></li>
+                                <li>Order status:</li>
+                            </ul>
+                            <ul class="rightList">
+                                <h5><li><a href="#" title=""> <strong>40€</strong></a></li></h5>
+								<span>par place</span>
+                                <li class="orderIcons"><span class="oUnfinished"></span><span class="oShipped tipN" title="Shipped on Feb 2nd, 2012"></span><span class="oPaid tipN" title="Paid on Feb 1st, 2012"></span></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="cLine"></div>
+                        
+                        <div class="orderRow"><a href ="Affichage2.html">
+                            <ul class="leftList">
+                                <li>Départ :</li>
+                                <li>Arriver :</li>
+                                <li>Heure :</li>
+                            </ul>
+                                <li><strong class="orange">Paris</strong></li>
+                                <li><strong class="green">Clermont-Ferrand</strong></li>
+                                <li><strong >12:00</strong></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </a></div>
+                        
+                        <div class="cLine"></div>
+                        <div class="totalAmount"><h6 class="floatL blue"></h6><h6 class="floatR blue"></h6><div class="clear"></div></div>
+                    </div>
+       
+             </div> -->
+            
+ <div class="widget">
+                    <div class="title">
+                    	<img src="images/icons/dark/money.png" alt="" class="titleIcon" />
+                        <h6>Covoiturage disponible</h6>
+                        <div class="topIcons" >
+                            <a href="#" class="tipS" title="Download statement"><img src="img/images/icons/downloadTop.png" alt="" /></a>
+                            <a href="#" class="tipS" title="Print invoice"><img src="img/images/icons/printTop.png" alt="" /></a>
+                            
+                        </div>
+                    </div>
+                    <div class="newOrder">
+                        <div class="userRow">
+                            <a href="#" title=""><img src="img/images/user.png" alt="" class="floatL" /></a>
+                            <ul class="leftList">
+                                <li><a href="#" title=""><strong>Rondi Andaloussi Youssef</strong></a></li>
+                                <li>Order status:</li>
+                            </ul>
+                            <ul class="rightList">
+                                <h5><li><a href="#" title=""> <strong>40€</strong></a></li></h5>
+								<span>par place</span>
+                                <li class="orderIcons"><span class="oUnfinished"></span><span class="oShipped tipN" title="Shipped on Feb 2nd, 2012"></span><span class="oPaid tipN" title="Paid on Feb 1st, 2012"></span></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                    
+                        <div class="cLine"></div>
+                        
+                        <div class="orderRow"><a href ="Affichage2.html">
+                            <ul class="leftList">
+                                <li>Départ :</li>
+                                <li>Arriver :</li>
+                                <li>Heure :</li>
+                            </ul>
+                                <li><strong class="orange">Paris</strong></li>
+                                <li><strong class="green">Clermont-Ferrand</strong></li>
+                                <li><strong >12:00</strong></li>
+                            </ul>
+                            <div class="clear"></div>
+                        </a></div>
+                        
+                        <div class="cLine"></div>
+                        <div class="totalAmount"><h6 class="floatL blue"></h6><h6 class="floatR blue"></h6><div class="clear"></div></div>
+                    </div>
+                </div>   			
+	</div>
+	</div>
+      </div>
+      </div>
+      <!-- Footer -->
+      <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+          <div class="container">
+            <div class="navbar-text pull-left">
+             <p>&copy; Université Blaise Pascal. Projet co-voiturage 2016-2017</p>
+            </div>
+            <!-- Ajout des icones avec Font awesome-->
+	            <div class="navbar-text pull-right">
+                <a href="#"><i class="fa fa-android fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+	            	<a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+	            </div>
+          </div>
+      </div>
+
+       
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+ 
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
