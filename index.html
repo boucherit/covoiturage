@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WeRoll</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- sytyle.css-->
+    <link href="bootstrap/css/style.css" type="text/css" rel="stylesheet">
+    <!-- Font Awesome-->
+	
+	<!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	<!-- Calendrier -->	
+	  <link href="bootstrap/css/bootstrap-datepicker.css" rel="stylesheet">
+	  <link href="bootstrap/css/jquery-ui.css" rel="stylesheet">
+  </head>
+
+  <!-- Body -->
+  <body>
+      <!-- 1/La classe navbar-fixed-top permet de fixer la barre en haut de la page du navigateur .
+             A savoir : Une barre fixe située en haut reste collée au bord de la fenêtre, et quand vous faites défiler avec l’ascenseur, le contenu passe sous la barre de façon logique. Il se peut que vous désiriez que la barre suive le mouvement et ne soit plus collée au bord de la fenêtre, mais au-dessus du contenu. Dans ce cas, évidemment, la barre disparaît quand vous faites défiler. Il faut alors utiliser la classe navbar-static-top au lieu de navbar-fixed-top !
+          2/Si on mets navbar-inverse au lieu de navbar-default la barre qui va etre en haut va changer la couleur en noir.   
+      -->
+      <!-- Première partie de la page-->
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      
+      <!-- La classe navbar-fixed-top impose la présence de la classe container ou container-fluid.-->
+        <div class="container">
+        <!-- Le titre doit être inclus dans une classe navbar-header pour avoir un affichage correct sur les mobiles.-->
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <!--  Apparaître un titre avec des caractères plus visibles avec la classe navbar-brand -->
+                <a class="navbar-brand" href="#"><i class="fa fa-car"></i>&nbsp; WeRoll</a>
+             </div>
+             <div class="navbar-collapse collapse">
+             <!-- Les classes nav et navbar-nav doivent être utilisées avec une balise <ul>. Tous les items de navigation apparaissent alors avec des balises <li>. L'item actif est repéré avec la classe active(gris). Un item désactivé est défini avec la classe disabled. Voici à la figure suivante un aperçu de la barre-->
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="index.html">Accueil</a></li> 
+                  <li><a href="#connecter" data-toggle="modal">Connexion </a></li>
+                  <li><a href="inscription.html"> Inscription   <i class=\"glyphicon glyphicon-indent-left\"></i></button></a></li>
+                </ul>
+             </div>
+        </div>
+      </div>
+      <!-- Fin du navbar -->
+      <!-- classe jumbotron pour mettre en valeur des contenus importants pour nitre site web ! -->
+      <!-- Deuxième partie de la page-->
+     <br/>
+     <div class="jumbotron  text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+          <h1>Bienvenue sur WeRoll</h1>
+          <p>Voyagez moins cher en covoiturage</p>
+
+          <hr class="m-y-2">
+          <br/>
+          <br/>
+          <br/>
+          <form class="navbar-form" >
+          <div class="input-group"> 
+              <span class="input-group-addon"><i class="fa fa-map-marker fa" aria-hidden="true"></i></span>
+              <input class="input-lg form-control" placeholder="Votre départ" type="search" id="description">
+          </div>
+            
+          <div class="input-group"> 
+              <span class=" input-group-addon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <input class="input-lg form-control" placeholder="Votre destination" type="search" id="description">
+          </div>
+            
+          <div class="input-group">   
+              <span class="input-group-addon"> <i class="fa fa-calendar" aria-hidden="true"></i> </span>
+                <input type="text" class="datepicker input-lg form-control" readonly> 
+          </div>
+
+          <div class="input-group">
+              <button type="submit" onclick="test()" class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-eye-open"></span> Chercher un trajet</button>
+          </div>
+          </div>
+          
+        </div>
+      </div> <!-- END container -->
+    </div>
+
+<!-- troisième partie de la page-->
+      <section id="middle">
+        <div class="container">
+         <div class="row">
+           <div class="col-md-4">
+             <h2>1. Envie de bouger ?</h2>
+              <p>Publiez ou recherchez votre trajet .</p>
+           </div>
+           <div class="col-md-4">
+              <h2>2. Choisissez votre trajet !</h2>
+              <p>Les passagers réservent en ligne les places proposées.</p> 
+           </div>
+           <div class="col-md-4">
+              <h2>3. C'est parti !</h2>
+              <p>Voyagez ensemble puis laissez un avis aux autres covoitureurs.</p>
+              <a class="btn btn-default" href="#" role="button">En savoir plus</a>
+           </div>
+         </div>
+        </div>
+      </section>
+<!-- Quatrième partie de la page-->
+<section id="feature">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+      <h1>Vous avez une voiture ?</h1>
+      <p>  Faites des économies sur vos déplacements, publiez une annonce de covoiturage ! </p>
+      <center><a class="btn btn-primary" href="proposer_trajet.html" role="button"><i class="fa fa-plus" aria-hidden="true"></i>&nbsp;Proposer des places</a></center>
+
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- Footer -->    
+<footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-6 col-xs-12">
+    <a href="#"><i class="fa fa-android fa-2x"></i></a>
+    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+  </div>
+  <div class=" navbar-text pull-right">
+    <p>2017 Copyright &copy; WeRoll.</p>
+  </div> 
+  </div>
+  </div>
+</footer>
+
+
+<!-- Model:  Connexion-->
+      <div class="modal fade" id="connecter" role="dialog">
+       <div class="modal-dialog">
+          <div class="modal-content">
+
+              <form class="form-horizontal" role="form" method="POST" action="#">
+                <div class="modal-header">
+                <h4>Connexion</h4>
+                </div>
+                <div class="model-body">
+                   <!--Authentification-->
+                   <div class="form-group">
+                    <label for="contact-name" class="col-sm-2 control-label">Login</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="contactname" placeholder="Entrez votre login" name="username" required>
+                    </div>
+                   </div>
+                   <!--pass -->
+                   <div class="form-group">
+                    <label for="contact-email" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="contactpass" placeholder="********* " name="password" required>
+                    </div>
+                   </div>
+                </div>
+                <div class="modal-footer">
+                  <a class="btn btn-default" data-dismiss="modal">Fermer</a>
+                  <input type="button" class="btn btn-primary" name="submit" onlick="auth()" value="Se connecter"> 
+                  <br/>
+                   Pas encore membre ? 
+                  <a href="inscription.html">Inscrivez-vous gratuitement </a>
+                </div>
+              </form>
+
+          </div>
+       </div>
+      </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/test.js"></script>
+	  <script type="text/javascript" src="js/auto.js"></script>
+<!-- Jquery-ui Calendrier -->
+	<script src="bootstrap/js/bootstrap-datepicker.js"></script>
+	<script src="bootstrap/js/jquery-ui.js"></script>
+	<script>
+	
+        $(function ($) {
+		$.datepicker.setDefaults($.datepicker.regional['fr']);
+            $('.datepicker').datepicker(
+			{
+			
+			
+			});
+        });
+    </script>
+
+  </body>
+</html>
