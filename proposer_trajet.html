@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppCov</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- sytyle.css-->
+    <link href="bootstrap/css/style.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap/css/sin.css" type="text/css" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Bootstrapvalidator CSS-->
+    <link href="bootstrap/css/bootstrapValidator.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-car"></i>&nbsp; AppCov</a>
+             </div>
+             <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                                   <li><a href="index.html">Rechercher un trajet</a></li> 
+                  <li><a href="proposer_trajet.html"> proposer un trajet <i class=\"glyphicon glyphicon-indent-left\"></i></button></a></li>
+                </ul>
+             </div>
+        </div>
+      </div>
+    <!-- Formulaire mod -->
+<br/>
+<div class="container">
+
+<div class="col-sm-offset-3 col-sm-6 ">
+    <form class="well" id="registration-form">
+      <h4><span class="glyphicon glyphicon-plus "></span> <span class="col-sm-offset-1 ">Proposez un trajet</span></h4> 
+            <div class="form-group">
+              <label for="departurePlaceId" class="cols-sm-2 control-label">Départ</label>
+              <div class="">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="departurePlaceId" id="departurePlaceId"  placeholder="Ville de Départ" required/>
+                </div>
+              </div>
+            </div>
+        
+            
+            <div class="form-group">
+              <label for="arrivalPlaceId" class="cols-sm-2 control-label">Arrivée</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="arrivalPlaceId" id="arrivalPlaceId"  placeholder="Déstination " required/>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Date de départ</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
+                  <input type="date" class="form-control" name="departureDate" id="departureDate" required/>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="form-group">
+              <label for="" class="cols-sm-2 control-label">Prix</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-euro" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="price" id="price"  placeholder="Le prix du trajet" required/>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="" class="cols-sm-2 control-label">Nombre de place</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="maxSeats" id="maxSeats"  placeholder="Nombre de place" required/>
+                </div>
+              </div>
+            </div>
+ <div class="form-group">
+              <label for="" class="cols-sm-2 control-label">Type de bagage</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i  class="glyphicon glyphicon-briefcase" aria-hidden="true"></i></span>
+				  <SELECT name="nom" size="1" type="text" class="form-control" name="luggage" id="luggage" placeholder="Type de bagage">
+				  <Option>
+				  <OPTION  >LARGE
+					<OPTION>MEDIUM
+						<OPTION>SMALL
+
+					</SELECT> 
+                </div>
+              </div>
+            </div
+			
+			
+        <div class="form-group ">
+              <input type="button" onclick="test()" target="_blank" id="bt" value ="Ajouter trajet" class="btn btn-primary  btn-block login-button">
+        </div>
+    </form>
+    </div>
+    </div>
+<!-- Footer -->    
+<footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-6 col-xs-12">
+    <a href="#"><i class="fa fa-android fa-2x"></i></a>
+    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+  </div>
+  <div class=" navbar-text pull-right">
+    <p>2017 Copyright &copy; WeRoll.</p>
+  </div> 
+  </div>
+  </div>
+</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/test.js"></script>
+    <!-- Bootstrap validator js-->
+  <script src="js/bootstrapValidator.min.js"></script>
+  <script type="text/javascript" src="js/testfor.js"></script>
+  </body>
+</html>
