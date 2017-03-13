@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AppCov</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- sytyle.css-->
+    <link href="bootstrap/css/style.css" type="text/css" rel="stylesheet">
+    <link href="bootstrap/css/sin.css" type="text/css" rel="stylesheet">
+    <!-- Font Awesome-->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+      <!-- Bootstrapvalidator CSS-->
+    <link href="bootstrap/css/bootstrapValidator.min.css" rel="stylesheet">
+  </head>
+  <body>
+      <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+             <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-car"></i>&nbsp; AppCov</a>
+             </div>
+             <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="index.html">Accueil</a></li> 
+                  <li><a href="inscription.html"> Inscription   <i class=\"glyphicon glyphicon-indent-left\"></i></button></a></li>
+                </ul>
+             </div>
+        </div>
+      </div>
+    <!-- Formulaire mod -->
+<br/>
+<div class="container">
+
+<div class="col-sm-offset-3 col-sm-6 ">
+    <form class="well" id="registration-form">
+      <h4><span class="glyphicon glyphicon-plus "></span> <span class="col-sm-offset-1 ">Pas encore membre ? Inscrivez-vous gratuitement</span></h4> 
+            <div class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Nom</label>
+              <div class="">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="firstName" id="firstName"  placeholder="Nom" required/>
+                </div>
+              </div>
+            </div>
+        
+            
+            <div class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Prénom</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="lastName" id="lastName"  placeholder="Prénom" required/>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="name" class="cols-sm-2 control-label">Date de naissance</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-calendar fa" aria-hidden="true"></i></span>
+                  <input type="date" class="form-control" name="birthDate" id="birthDate" required/>
+                </div>
+              </div>
+            </div>
+        
+        
+            <div class="form-group">
+              <label for="email" class="cols-sm-2 control-label">Username</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                  <input type="text" class="form-control" name="username" id="username"  placeholder="Username (min 4 caractères)" required/>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="password" class="cols-sm-2 control-label">Mot de passe</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" name="password" id="password"  placeholder="Mot de passe 6 caracrètes" required/>
+                </div>
+              </div>
+            </div>
+
+        <div class="form-group ">
+              <input type="button" onclick="test()" target="_blank" id="bt" value ="M'inscrire" class="btn btn-primary  btn-block login-button">
+        </div>
+    </form>
+    </div>
+    </div>
+<!-- Footer -->    
+<footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-6 col-xs-12">
+    <a href="#"><i class="fa fa-android fa-2x"></i></a>
+    <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+    <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+    <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
+  </div>
+  <div class=" navbar-text pull-right">
+    <p>2017 Copyright &copy; WeRoll.</p>
+  </div> 
+  </div>
+  </div>
+</footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+ <script type="text/javascript" src="js/test.js"></script>
+    <!-- Bootstrap validator js-->
+  <script src="js/bootstrapValidator.min.js"></script>
+  <script type="text/javascript" src="js/testfor.js"></script>
+  </body>
+</html>
